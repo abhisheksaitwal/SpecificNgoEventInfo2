@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+android:id="@+id/layout_for_ngo_event_info"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="ngocollab.com.specificngoeventinfo.SpecificNgoEventInfo">
+
+<!-- our toolbar -->
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar_ngo_event_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+<!-- our tablayout to display tabs  -->
+<android.support.design.widget.TabLayout
+    android:id="@+id/tabLayout_ngo_event_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:tabIndicatorColor="@color/White"
+    app:tabIndicatorHeight="4dp"/>
+
+<!-- View pager to swipe views -->
+<android.support.v4.view.ViewPager
+    android:id="@+id/pager_ngo_event_info"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="fill_parent"/>
+
+</LinearLayout>

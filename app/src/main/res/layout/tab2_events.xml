@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/upcoming_event_ngo_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Event"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="19sp"/>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:layout_gravity="center"
+        android:paddingTop="6dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_date_specific_ngo_event"
+            android:src="@drawable/ic_date_specific_ngo_event"
+            android:layout_width="24dp"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/icon_date_specific_ngo_event"
+            android:id="@+id/month_date_specific_ngo_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="January 12th, 2017"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/vertical_recycler_view_tab2Events"
+                android:background="@color/White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/past_event_ngo_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Past Event"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/primary_text"
+            android:textSize="19sp"/>
+
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:layout_gravity="center"
+            android:paddingTop="6dp"
+            android:paddingBottom="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/icon_date_specific_ngo_event_past"
+                android:src="@drawable/ic_date_specific_ngo_event"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/icon_date_specific_ngo_event_past"
+                android:id="@+id/month_date_specific_ngo_past_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="November 20th, 2016"
+                android:textColor="@color/primary_text"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fafafa"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addevents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_specific_ngo_event"
+        app:rippleColor="@color/colorPrimaryDark"
+        android:layout_margin="16dp"/>
+</android.support.design.widget.CoordinatorLayout>
